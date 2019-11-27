@@ -1,0 +1,38 @@
+<% include ./partials/header %>
+
+<div class="row">
+    <div class='col-md-12'>
+        <form class="form-signin" action="/register" method="post">
+            <h1 class="h3 mb-3 font-weight-normal  text-center">Please Sign Up</h1>
+
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input class="form-control first-item-form" type="text" id="inputUsername" name="username" placeholder="Username">
+            
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input class="form-control" type="password" id="inputPassword" name="password" placeholder="Password">
+            
+            <label for="inputFirstName" class="sr-only">First Name</label>
+            <input class="form-control" type="text" id='inputFirstName' name="firstName" placeholder="First Name">
+            
+            <label for="inputLastName" class="sr-only">Last Name</label>
+            <input class="form-control" type="text" id="inputLastName" name="lastName" placeholder="Last Name">
+            
+            <label for="inputEmail" class="sr-only">Email</label>
+            <input class="form-control" type="email" id="inputEmail" name="email" placeholder="Email">
+            
+            <label for="inputAvatar" class="sr-only">Avatar</label>
+            <input class="form-control" type="text" id="inputAvatar" name="avatar" pattern="^https:\/\/images\.unsplash\.com\/.*" placeholder="AvatarURL / only unsplash urls">
+            <small>Click <a href="https://youtu.be/Bn3weNRQRDE">here</a> for tutorial on how to copy unsplash urls.</small>
+            
+            <label for="inputAdminCode" class="sr-only">Admin Code</label>
+            <input class="form-control last-item-form" type="text" id="inputAdminCode" name="adminCode" placeholder="Are you an admin?">
+            
+            <button class="btn btn-lg btn-primary btn-block">Sign Up!</button>
+        </form>
+        <form class="form-signin">
+            <a href="/campgrounds">Go Back</a>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer %>

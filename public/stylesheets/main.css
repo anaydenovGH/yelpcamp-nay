@@ -1,0 +1,119 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.first-item-form {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.last-item-form {
+  margin-bottom: 15px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.delete-form {
+  display: inline;
+}
+
+#pwd-reset-btn {
+  float: right;
+}
+
+#search-btn {
+  margin-left: 10px;
+}
+
+#avatar-img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Google Maps */
+#map {
+  height: 300px;
+  width: 100%;
+}
+.card-img-top-1 {
+  height: 170px;
+}
+
+.card-img-top-2 {
+  height: 500px;
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  #map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  #map {
+    height: 200px;
+    width: 75%;
+  }
+
+  #search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #search-btn {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  #map {
+    height: 200px;
+    width: 75%;
+  }
+
+  #search-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #search-btn {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
